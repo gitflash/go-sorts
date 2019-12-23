@@ -25,7 +25,7 @@ func partition(arr []int, low int, high int) int {
 	for j := low; j <= high-1; j++ {
 		if arr[j] < pivot {
 			i++
-			// swap arr[i] and arr[j]
+
 			helpers.Swap(&arr[i], &arr[j])
 		}
 	}
